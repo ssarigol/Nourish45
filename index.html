@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- This makes the app look full-screen on mobile, no browser chrome -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nourish45</title>
+
+    <!-- Links to our manifest so iPhone knows how to install this as an app -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#7F77DD" />
+
+    <!-- Apple-specific tags so "Add to Home Screen" works beautifully on iPhone -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Nourish45" />
+  </head>
+  <body>
+    <!-- React will inject the entire app into this single div -->
+    <div id="root"></div>
+
+    <!-- Vite handles loading our React app in development and production -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
